@@ -17,6 +17,9 @@ body {
 p {
   font-size: 18px;
 }
+ul{
+    list-style: none;
+}
 .none {
   display: none !important;
 }
@@ -45,7 +48,6 @@ img {
 }
 
 .nav__list {
-  list-style: none;
   display: flex;
   gap: 2em;
 }
