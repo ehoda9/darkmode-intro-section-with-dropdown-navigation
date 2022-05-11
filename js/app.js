@@ -49,6 +49,9 @@ lists.forEach(e => {
                 event.target.matches('.overlay')
 
             ) {
+                lists.forEach((e) => {
+                    e.classList.remove('active');
+                });
                 subL.classList.add('none');
             }
         }
