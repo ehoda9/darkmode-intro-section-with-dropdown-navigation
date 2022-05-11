@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/darkmode.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <div class="darkmode-toggle">
+      <img class="sun" src="./images/partly-sunny-outline.svg" alt="sun" />
+      <img class="moon" src="./images/moon.svg" alt="moon" />
+    </div>
+    <div class="overlay none"></div>
+    <header class="header">
+      <img class="logo" src="./images/logo.svg" alt="logo" />
+      <div class="nav-toggle">
+        <img class="open" src="./images/icon-menu.svg" alt="menu" />
+      </div>
+      <nav class="nav">
+        <img
+          src="./images/icon-close-menu.svg"
+          alt="close"
+          class="close_menu"
+        />
+        <ul class="nav__list">
+          <li data-sub="1" class="list__item">
+            Features
+            <img
+              src="./images/icon-arrow-down.svg"
+              alt="arrow"
+              class="arrowdown"
+            />
+            <img class="arrowup" src="./images/icon-arrow-up.svg" alt="arrow" />
+            <ul data-sub="1" class="subList none">
+              <list class="subList__item">
+                <img src="./images/icon-todo.svg" alt="" />
+                Todo
+              </list>
+              <list class="subList__item">
+                <img src="./images/icon-calendar.svg" alt="" />
+                Calendar</list
+              >
+              <list class="subList__item">
+                <img src="./images/icon-reminders.svg" alt="" />
+                Reminders</list
+              >
+              <list class="subList__item">
+                <img src="./images/icon-planning.svg" alt="" />
+                Planing</list
+              >
+            </ul>
+          </li>
+          <li data-sub="2" class="list__item">
+            Company
+            <img
+              src="./images/icon-arrow-down.svg"
+              alt="arrow"
+              class="arrowdown"
+            />
+            <img class="arrowup" src="./images/icon-arrow-up.svg" alt="arrow" />
+            <ul data-sub="2" class="subList none">
+              <list class="subList__item">History</list>
+              <list class="subList__item">Our Team</list>
+              <list class="subList__item">Blogs</list>
+            </ul>
+          </li>
+          <li class="list__item">Careers</li>
+          <li class="list__item">About</li>
+        </ul>
+        <div class="button__group">
+          <button class="button__users">Login</button>
+          <button class="button__users">Register</button>
+        </div>
+      </nav>
+    </header>
+    <main class="app">
+      <div class="head">
+        <h1 class="title">Make remote work</h1>
+        <p class="about">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="btn">Learn more</button>
+        <div class="companies">
+          <img src="./images/client-databiz.svg" alt="companies" />
+          <img src="./images/client-audiophile.svg" alt="companies" />
+          <img src="./images/client-meet.svg" alt="companies" />
+          <img src="./images/client-maker.svg" alt="companies" />
+        </div>
+      </div>
+
+      <img
+        class="hero"
+        src="./images/image-hero-desktop.png"
+        alt="image-hero"
+      />
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

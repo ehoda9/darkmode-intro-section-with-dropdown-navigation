@@ -1,0 +1,115 @@
+@media (max-width: 768px) {
+  .nav-toggle,
+  .close_menu {
+    display: block;
+  }
+  .nav-toggle:hover,
+  .close_menu:hover {
+    cursor: pointer;
+  }
+  .app {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding-right: 0px;
+    gap: 3em;
+  }
+  .app img {
+    height: fit-content;
+    width: 70%;
+  }
+  .head .title {
+    font-size: 3rem;
+  }
+  .btn {
+    margin: auto;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+  }
+  header {
+    justify-content: space-between;
+  }
+  .nav {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+    width: 50%;
+    height: 100vh;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2em;
+    gap: 1em;
+    font-size: 1.3rem;
+    border-left: 1px solid rgb(203, 203, 203);
+  }
+  .nav__list {
+    flex-direction: column;
+  }
+  .close_menu {
+    align-self: flex-end;
+  }
+  .button__users {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  .button__users:last-child:hover {
+    color: white;
+    background-color: black;
+  }
+  body.darkmode .btn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+  }
+  body.darkmode .btn:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+  }
+  .btn:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+  }
+  .subList {
+    position: static;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+  }
+  /*! for test */
+}
+@media (max-width: 423px) {
+  .head .title {
+    font-size: 1.7rem;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+  .app {
+    padding-right: 0;
+  }
+  .app img {
+    width: 100%;
+  }
+  .head {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding: 0 2em;
+    gap: 30px;
+  }
+  .companies {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .companies img {
+    width: fit-content;
+    height: fit-content;
+  }
+  .nav {
+    width: 73%;
+  }
+}
